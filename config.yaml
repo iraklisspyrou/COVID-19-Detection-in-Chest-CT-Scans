@@ -1,0 +1,5 @@
+split_dir: dataset_split
+model: resnet
+batch: 32
+lr: 1e-4
+epochs: 20

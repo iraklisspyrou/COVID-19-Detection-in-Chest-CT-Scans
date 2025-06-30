@@ -36,3 +36,24 @@ We demonstrate that transfer learning (especially ResNet18) delivers the best tr
 
 ---
 
+---
+## 📂 Project Structure
+
+
+covid-ct-detection/
+├── README.md # This file
+├── config.yaml # Hyperparameters (lr, epochs, splits, etc.)
+├── split_data.py # Script to shuffle & split dataset into train/val/test
+├── transforms.py # Definition of preprocessing and augmentation pipelines
+├── data_loading.py # PyTorch Dataset/DataLoader for CT slices
+├── custom_cnn.py # Implementation of the lightweight CNN from scratch
+├── ResNet.py # Wrapper for fine-tuned ResNet18 (1-ch input → 2-class head)
+├── vit_model.py # Wrapper for fine-tuned ViT-B/16 (3-ch patch embedding)
+├── main.py # Entry point: parses args, trains & evaluates a model
+├── engine.py # Training/validation loops, checkpointing, early stopping
+├── evaluate.py # Computes test metrics (accuracy, F1, confusion matrix)
+├── grad_cam.py # SmoothGradCAM++ for CNN models
+├── gradcam_vit.py # SmoothGradCAM++ for ViT models
+└── utils.py # Helper functions (seed setting, metric logging, plotting)
+
+---

@@ -39,7 +39,7 @@ We demonstrate that transfer learning (especially ResNet18) delivers the best tr
 ---
 ## 📂 Project Structure
 
-
+```
 covid-ct-detection/
 ├── README.md # This file
 ├── config.yaml # Hyperparameters (lr, epochs, splits, etc.)
@@ -55,5 +55,5 @@ covid-ct-detection/
 ├── grad_cam.py # SmoothGradCAM++ for CNN models
 ├── gradcam_vit.py # SmoothGradCAM++ for ViT models
 └── utils.py # Helper functions (seed setting, metric logging, plotting)
-
+```
 ---
